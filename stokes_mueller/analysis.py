@@ -19,7 +19,7 @@ def get_data(folder_path) -> dict:
     """
     Imports experimental data from the specified folder.
 
-    Converts each .npy file into an np.ndarray and orgainzes 
+    Converts each .npy file into an np.ndarray and organizes 
     the arrays into a dictionary according to the corresponding
     orientation angle. 
     The filenames must contain '(...)_Angle_XX_(...).npy',
@@ -70,7 +70,7 @@ def subtract(exp_data, bcg_data) -> dict:
         Raw experimental data organized into an dictionary as
         {angle: data_array}.
     bcg_data : dict
-        Background data organized nto an dictionary as
+        Background data organized into an dictionary as
         {angle: data_array}.
 
     Returns
@@ -145,7 +145,7 @@ def rectify(data_dict) -> dict:
     rectified_data = {}
 
     for angle in data_dict:
-        rectified_data[angle] = np.clip(data_dict, a_min = 0, a_max=None)
+        rectified_data[angle] = np.clip(data_dict[angle], a_min = 0, a_max=None)
 
     return rectified_data
 

@@ -1,7 +1,7 @@
 """
 Advanced utilities for the simulation module
 
-Cotains utility functions that are used in the simulation module, 
+Contains utility functions that are used in the simulation module, 
 but they are not intended for direct end user interaction. 
 """
 

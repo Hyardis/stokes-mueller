@@ -4,7 +4,7 @@ Numerical simulations of the polarization state.
 This package enables modelling of the light polarization state evolution
 through an experimental setup. It utilizes the combined Stokes-Mueller
 formalism for linear optical phenomena. Its main focus are simulations
-of relfective optical elements (metallic mirrors) in the EUV spectral 
+of reflective optical elements (metallic mirrors) in the EUV spectral 
 region.
 
 Conventions
@@ -31,7 +31,7 @@ Stokes Parameters sign formalism:
         negative: Degree of LP in a plane rotated -45° to the p-plane
     S3: 
         positive: Degree of LCP
-        negative: Degree od RCP
+        negative: Degree of RCP
 
 Main API
 --------

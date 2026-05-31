@@ -56,7 +56,7 @@ def plot_spectrum(material = "Au", theta = (70, 50, 70), show = "fractional pola
         step between datapoints in eV
     source : str, optional
         Preffered experimental data source for the refractive index from RefractiveIndex database.
-        Default is 'auto', which will select the best aviable source for the given beam energy.
+        Default is 'auto', which will select the best available source for the given beam energy.
     formalism : str, optional
         Sign convention for helicity. 'Schmising' (by default) or 'Koide'
     preset: str, optional
@@ -206,7 +206,7 @@ def optimize_geometry(material = "Mo", E_eV = 70, x0 = np.array([45, 78]), incid
         Type of algorithm used in optimization. 'local' or 'global'
     source : str, optional
         Preffered experimental data source for the refractive index from RefractiveIndex database.
-        Default is 'auto', which will select the best aviable source for the given beam energy.
+        Default is 'auto', which will select the best available source for the given beam energy.
     analyze : bool, optional
         If True, the function returns detailed analysis of the optimization process and its result, 
         along with the vizualization of the found maximum location. Default is False.
@@ -382,7 +382,7 @@ def plot_optimized_geometry(material = "Mo", incidence = "variable", show = "cha
         'characteristics' plots figure of merit, reflectivity and degree of circular polarization
         'geometry' plots optimized geometrical parameters
             element orientation (alpha) for fixed incidence (see incidence parameter)
-            alpha and incidence (theta) for variable incience (see incidence parameter)
+            alpha and incidence (theta) for variable incidence (see incidence parameter)
     mirrors : int
         number of mirrors of a multiple-reflection coplanar polarizer. Only relevant for optimization
         of incidence angle of a multiple-reflection coplanar polarizer. In this case, 
@@ -403,7 +403,7 @@ def plot_optimized_geometry(material = "Mo", incidence = "variable", show = "cha
         Type of algorithm used in optimization. 'local' or 'global'
     source : str, optional
         Preffered experimental data source for the refractive index from RefractiveIndex database.
-        Default is 'auto', which will select the best aviable source for the given beam energy.
+        Default is 'auto', which will select the best available source for the given beam energy.
     
     material: mirror material
     incidence: optional, 'variable' by default. Specifies theta, which is then excluded from the optimization. Can also be a tuple of different angles inside a coplanar polarizer.
@@ -532,7 +532,7 @@ def plot_setup(vector, E_eV, element, incidence, orientation, show = "all", sour
         The plots will be shown in separate windows. Default is 'all'
     source : str, optional
         Preffered experimental data source for the refractive index from RefractiveIndex database.
-        Default is 'auto', which will select the best aviable source for the given beam energy.
+        Default is 'auto', which will select the best available source for the given beam energy.
     simplify_expressions : bool, optional
         Perform SymPy simplification of symbolic expressions of the different metrics.
         Suitable only for smaller and simple setups, gets very computationally demanding 
