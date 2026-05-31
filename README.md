@@ -6,23 +6,12 @@ This package enables physics simulations of light polarization. It treats the in
 The main motivation for the development of this model was its utilization in time-resolved photoelectron circular dichroism (TR-PECD) spectroscopy as an experimental setup optimization tool. Therefore, it focuses on the use of reflective optics, namely metallic mirrors, in achieving a high degree of circular polarization of high-energy light, especially in the EUV and XUV spectral range. It is mainly intended for use by experimentalists, researchers and students in the area of optics, ellipsometry, and physical and analytical chemistry.
 
 ## Installation
-**Standard Installation**
 
 You can install `stokes_mueller` directly from the m
 ain GitHub repository using `pip`:
 
 ```bash
 pip install git+https://github.com/Hyardis/stokes-mueller.git
-```
-
-**For Developers**
-
-If you want to contribute to the project, install it in "editable" mode:
-
-```bash
-git clone https://github.com/Hyardis/stokes-mueller.git
-cd stokes-mueller
-pip install -e .
 ```
 
 ## Quick Start
