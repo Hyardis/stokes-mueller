@@ -12,7 +12,7 @@ You can install `stokes_mueller` directly from the m
 ain GitHub repository using `pip`:
 
 ```bash
-pip install git+[https://github.com/Hyardis/stokes-mueller.git](https://github.com/Hyardis/stokes-mueller.git)
+pip install git+https://github.com/Hyardis/stokes-mueller.git
 ```
 
 **For Developers**
@@ -21,8 +21,8 @@ If you want to contribute to the project, install it in "editable" mode:
 
 ```bash
 git clone https://github.com/Hyardis/stokes-mueller.git
-cd stokes_mueller
-pip install -e
+cd stokes-mueller
+pip install -e .
 ```
 
 ## Quick Start
