@@ -7,8 +7,7 @@ The main motivation for the development of this model was its utilization in tim
 
 ## Installation
 
-You can install `stokes_mueller` directly from the m
-ain GitHub repository using `pip`:
+You can install `stokes_mueller` directly from the main GitHub repository using `pip`:
 
 ```bash
 pip install git+https://github.com/Hyardis/stokes-mueller.git
