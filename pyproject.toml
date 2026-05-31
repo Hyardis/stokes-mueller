@@ -1,0 +1,13 @@
+[project]
+name = "stokes_mueller"
+version = "0.1.0"
+description = "EUV polarization simulation using the Stokes-Mueller formalism."
+dependencies = [
+    "numpy>=1.20.0",
+    "sympy>=1.10",
+    "matplotlib>=3.5.0"
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
