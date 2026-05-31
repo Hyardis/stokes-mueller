@@ -1,11 +1,13 @@
 [project]
 name = "stokes_mueller"
 version = "0.1.0"
-description = "EUV polarization simulation using the Stokes-Mueller formalism."
+description = "Polarization state simulation using the Stokes-Mueller formalism."
 dependencies = [
-    "numpy>=1.20.0",
-    "sympy>=1.10",
-    "matplotlib>=3.5.0"
+    "numpy>=2.3.4",
+    "scipy>=1.16.3",
+    "sympy>=1.14.0",
+    "refractiveindex>=1.0.2",
+    "matplotlib>=3.10.7"
 ]
 
 [build-system]

@@ -1,5 +1,4 @@
 # Stokes-Mueller Simulations of Polarization State
-[Zenodo DOI badge + License badge]
 
 ## Overview
 This package enables physics simulations of light polarization. It treats the information about the polarization state as a vector (Stokes vector) and each change of the polarization state is represented as an algebraic transformation of this vector (Mueller matrix). These changes of polarization state are achieved by an approprite positioning of different optical elemets in the beam's path, where the crucial factor on the resulting polarization effect is their orientation. These simulations predict the evolution of the polarization state as the beam passes through an experimental setup consisting of multiple optical elements, parametrized by the elements' orientations. The results obtained by scanning over different positions of the elements then enable finding the optimal settings of the setup for the desired polarization state. 
@@ -7,21 +6,56 @@ This package enables physics simulations of light polarization. It treats the in
 The main motivation for the development of this model was its utilization in time-resolved photoelectron circular dichroism (TR-PECD) spectroscopy as an experimental setup optimization tool. Therefore, it focuses on the use of reflective optics, namely metallic mirrors, in achieving a hight degree of circular polazriation of high-energy light, especially in the EUV and XUV spectral range. It is mainly intended for use by experimentalists, researchers and students in the area of optics, ellipsometry, and physical and analytical chemistry.
 
 ## Installation
+**Standard Installation**
 
-[how to install the package from github]
+You can install `stokes_mueller` directly from the m
+ain GitHub repository using `pip`:
+
+```bash
+pip install git+[https://github.com/Hyardis/stokes-mueller.git](https://github.com/Hyardis/stokes-mueller.git)
+```
+
+**For Developers**
+
+If you want to contribute to the project, install it in "editable" mode:
+
+```bash
+git clone https://github.com/Hyardis/stokes-mueller.git
+cd stokes_mueller
+pip install -e
+```
 
 ## Quick Start
 
-[short few lines of code demo of the package]
+Below is an example of how to run a simple simulation using the stokes_mueller` package:
 
-## Project Structure
+```python
+import numpy as np
+import stokes_mueller as sm
 
-[provide a short summary of each module contained in the package]
+# 1. Define the experimental setup to be simulated.
+# 'qwp' denotes a quarter-wave plate.
+# 'Au' denotes a golden mirror.
+elements = ('qwp', 'Au')
 
-## Citation
+# 2. Define the setup geometry.
+# Orientations of both elements are parametrized.
+incidence = (0, 62.5)
+orientations = (np.arange(-90, 90), np.arange(-90, 90))
 
-[how to cite this work: text and BibTex, link to Zenodo (DOI)]
+# 3. Define the incident beam by its Stokes vector and energy.
+# This beam is horizontally linearly polarized.
+Stokes_vector = (1, 1, 0, 0)
+beam_energy_eV = 1.55
 
-## License
-
-[e.g. "Distributed under MIT License. See LICENSE for more information."]
+# 4. Run the simulation itself, the results are plotted automatically. 
+# The 'show' option specifies to plot the degree of circular polarization. 
+sm.plot_setup(
+    Stokes_vector,
+    beam_energy_eV,
+    elements,
+    incidence,
+    orientations,
+    show = 'PC'
+)
+```
