@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: stokes_mueller
+Version: 0.1.0
+Summary: Polarization state simulation using the Stokes-Mueller formalism.
+Requires-Dist: numpy>=2.3.4
+Requires-Dist: scipy>=1.16.3
+Requires-Dist: sympy>=1.14.0
+Requires-Dist: refractiveindex>=1.0.2
+Requires-Dist: matplotlib>=3.10.7
